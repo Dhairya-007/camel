@@ -36,7 +36,10 @@ public final class PdfHeaderConstants {
             Expected type is
             https://pdfbox.apache.org/docs/2.0.13/javadocs/org/apache/pdfbox/pdmodel/encryption/DecryptionMaterial.html[DecryptionMaterial].
             *Mandatory* header if PDF document is encrypted.""",
-              javaType = "org.apache.pdfbox.pdmodel.encryption.DecryptionMaterial")
+              javaType = "org.apache.pdfbox.pdmodel.encryption.DecryptionMaterial",
+              deprecationNote = "Never read by the component: PDDocument is decrypted when it is loaded, and the byte[]"
+                                + " converter loads it without a password")
+    @Deprecated
     public static final String DECRYPTION_MATERIAL_HEADER_NAME = "CamelPdfDecryptionMaterial";
 
     @Metadata(description = """
