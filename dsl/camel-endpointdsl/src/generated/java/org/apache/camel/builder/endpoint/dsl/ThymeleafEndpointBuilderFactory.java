@@ -510,7 +510,9 @@ public interface ThymeleafEndpointBuilderFactory {
             return "CamelThymeleafVariableMap";
         }
         /**
-         * The ServletContext for a web application.
+         * The ServletContext for a web application. Deprecation note: Never
+         * read by the component: the web application template resolver is built
+         * from the jakartaServletWebApplication set on the endpoint.
          * 
          * The option is a: {@code jakarta.servlet.ServletContext} type.
          * 
@@ -518,6 +520,7 @@ public interface ThymeleafEndpointBuilderFactory {
          * 
          * @return the name of the header {@code ThymeleafServletContext}.
          */
+        @Deprecated
         public String thymeleafServletContext() {
             return "CamelThymeleafServletContext";
         }
