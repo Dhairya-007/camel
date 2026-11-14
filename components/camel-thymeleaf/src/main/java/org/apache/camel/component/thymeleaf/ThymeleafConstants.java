@@ -33,7 +33,10 @@ public class ThymeleafConstants {
               javaType = "Map<String, Object>")
     public static final String THYMELEAF_VARIABLE_MAP = "CamelThymeleafVariableMap";
 
-    @Metadata(description = "The ServletContext for a web application.", javaType = "jakarta.servlet.ServletContext")
+    @Metadata(description = "The ServletContext for a web application.", javaType = "jakarta.servlet.ServletContext",
+              deprecationNote = "Never read by the component: the web application template resolver is built from the"
+                                + " jakartaServletWebApplication set on the endpoint")
+    @Deprecated
     public static final String THYMELEAF_SERVLET_CONTEXT = "CamelThymeleafServletContext";
 
     private ThymeleafConstants() {
