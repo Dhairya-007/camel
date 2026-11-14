@@ -8743,3 +8743,14 @@ if it configured the proxy.
 It is now deprecated, with a `deprecationNote` that says so, and its description no longer claims to configure a proxy.
 Remove `protocol` from the endpoint URI or the configuration. To send the client's traffic through a proxy, use
 `proxyProtocol` together with `proxyHost` and `proxyPort`, which the shared client builder does apply.
+
+=== camel-docker - the loggingFilter and followRedirectFilter options are deprecated
+
+Neither option has ever had an effect. `DockerClientFactory` builds the whole `DockerClientProfile` that the client is
+created from, and it sets neither of them - `DockerClientProfile` has no field for either - so `isLoggingFilter()` and
+`isFollowRedirectFilter()` are called only by the generated configurers. The two matching headers,
+`CamelDockerLoggingFilter` and `CamelDockerFollowRedirectFilter`, are read nowhere either.
+
+Both options and both header constants are now deprecated. Remove `loggingFilter` and `followRedirectFilter` from the
+endpoint URI or the component configuration; setting them changed nothing. To log the exchanges with the Docker daemon,
+use a `log` EIP or raise the log level of the docker-java client instead.
