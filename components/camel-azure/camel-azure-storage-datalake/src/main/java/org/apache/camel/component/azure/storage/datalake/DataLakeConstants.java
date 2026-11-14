@@ -43,7 +43,7 @@ public final class DataLakeConstants {
     @Metadata(label = "producer", description = "Name of the file in azure data lake on which operation is to be performed.",
               javaType = "String")
     public static final String FILE_NAME = HEADER_PREFIX + "FileName";
-    @Metadata(label = "from both", description = "The metadata to associate with the file.",
+    @Metadata(description = "(producer) The metadata to associate with the file. (consumer) The metadata of the file.",
               javaType = "Map<String, String>")
     public static final String METADATA = HEADER_PREFIX + "Metadata";
     @Metadata(label = "producer",
