@@ -1170,7 +1170,7 @@ public interface SalesforceComponentBuilderFactory {
     
         
         /**
-         * Maximum thread pool size size for consumer worker pool.
+         * Maximum thread pool size for consumer worker pool.
          * 
          * The option is a: &lt;code&gt;int&lt;/code&gt; type.
          * 
@@ -1187,7 +1187,7 @@ public interface SalesforceComponentBuilderFactory {
     
         
         /**
-         * Core thread pool size size for consumer worker pool.
+         * Core thread pool size for consumer worker pool.
          * 
          * The option is a: &lt;code&gt;int&lt;/code&gt; type.
          * 

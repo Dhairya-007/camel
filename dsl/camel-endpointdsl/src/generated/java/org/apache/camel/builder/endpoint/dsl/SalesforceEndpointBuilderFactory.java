@@ -1503,7 +1503,7 @@ public interface SalesforceEndpointBuilderFactory {
             return this;
         }
         /**
-         * Maximum thread pool size size for consumer worker pool.
+         * Maximum thread pool size for consumer worker pool.
          * 
          * The option is a: <code>int</code> type.
          * 
@@ -1518,7 +1518,7 @@ public interface SalesforceEndpointBuilderFactory {
             return this;
         }
         /**
-         * Maximum thread pool size size for consumer worker pool.
+         * Maximum thread pool size for consumer worker pool.
          * 
          * The option will be converted to a <code>int</code> type.
          * 
@@ -1533,7 +1533,7 @@ public interface SalesforceEndpointBuilderFactory {
             return this;
         }
         /**
-         * Core thread pool size size for consumer worker pool.
+         * Core thread pool size for consumer worker pool.
          * 
          * The option is a: <code>int</code> type.
          * 
@@ -1548,7 +1548,7 @@ public interface SalesforceEndpointBuilderFactory {
             return this;
         }
         /**
-         * Core thread pool size size for consumer worker pool.
+         * Core thread pool size for consumer worker pool.
          * 
          * The option will be converted to a <code>int</code> type.
          * 

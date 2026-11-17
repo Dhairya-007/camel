@@ -290,10 +290,10 @@ public class SalesforceComponent extends DefaultComponent implements SSLContextP
     @Metadata(label = "consumer,advanced",
               description = "To use a custom thread pool for processing received Salesforce events, for example to process events in parallel.")
     private ExecutorService consumerWorkerPoolExecutorService;
-    @Metadata(label = "consumer,advanced", description = "Core thread pool size size for consumer worker pool.",
+    @Metadata(label = "consumer,advanced", description = "Core thread pool size for consumer worker pool.",
               defaultValue = "10")
     private int consumerWorkerPoolSize = 10;
-    @Metadata(label = "consumer,advanced", description = "Maximum thread pool size size for consumer worker pool.",
+    @Metadata(label = "consumer,advanced", description = "Maximum thread pool size for consumer worker pool.",
               defaultValue = "20")
     private int consumerWorkerPoolMaxSize = 20;
 
